@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/726995757a.js" crossorigin="anonymous"></script>
+
+</head>
+<body> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" height="60px">
+                 <ul id="sidemenu">
+                    <li><a href="#home" >Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Services</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I,m <span>Ranjan</span><br> Kumar<br> from Bihar</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------about----------->
+    <div id="about">
+        <div class="container"></div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P>hii,I am Ranjan kumar.student of computer science and Engineering at Dr. A.P.J. Abdul Kalam Technical University Uttar Pradesh. I love to know the latest developments in technology and Along with my degree I completed front end development course. that technology I learnt it helps me to complete my final year project that is Online health care...
+
+                 <br><br>   ☆Training☆
+                   MERN stack development with javascript.Training period 3-6months, institute name DUCAT the IT Training
+                   school Noida, Identity no. N/63/2397. </P>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                
+                    <p class="tab-links" onclick="opentab('trainig')">Trainig</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML,CSS,JAVASCRIPT,BOOTSTRAP,reactjs</span></li>
+                        
+                    </ul>
+               </div>
+
+               <div class="tab-contents" id="trainig">
+                <ul>
+                    <li>
+                        <b>MERN </b>stack development with javascript.Training period 3-6months, institute name
+                         DUCAT the IT Training school Noida, Identity no. N/63/2397.
+                    </li>
+                </ul>
+            </div>
+                <div class="tab-contents " id="education">
+                    <ul>
+                        <li><span>2018-22</span><br>B.Tech from AKTU</li>
+                        <li><span>2015</span><br>12th from BSEB PATNA</li>
+                        <li><span>2013</span><br>10th from BSEB PATNA</li>
+                    </ul>
+                </div>
+            </div>
+            <!-------------services----------------->
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                     <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, nobis!
+                         Consectetur assumenda quae ad, perspiciatis ea rerum quo eligendi iste numquam,
+                          libero laudantium omnis harum? Assumenda iusto provident explicabo nihil?</p>
+                          <a href="https://www.interaction-design.org/literature/topics/web-design">learn more</a>
+                     </div>
+                    
+                     <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h2>OPTION TRADER</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, nobis!
+                         Consectetur assumenda quae ad, perspiciatis ea rerum quo eligendi iste numquam,
+                          libero laudantium omnis harum? Assumenda iusto provident explicabo nihil?</p>
+                          <a href="https://www.optionstrading.org/introduction/what-is-options-trading/">learn more</a>
+                     </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-------------------contact ----------------------->
+
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="content-left">
+                            <h1 classs="sub-title">Contact Me</h1> <br>
+                            <p> <i class="fa fa-paper-plane" aria-hidden="true"></i> vranjankumar1@gmail.com</p>
+                            <p> <i class="fa fa-phone-square" aria-hidden="true"></i>
+                               7782918240</p> <br>
+
+                            <div class="social-icons">
+                                <h2>Social Icons</h2>
+                            <a href="https://github.com" class="fa fa-github"></a>
+                            <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+                            <a href="https://instagram.com" class="fa fa-instagram"></a>
+                            <a href="https://facebook.com" class="fa fa-facebook"></a>
+                        </div> <br><br>
+                          <h2>My CV</h2>
+                        <a href="images/my-cv.pdf" download   class="btn btn2">Download CV</a>
+                        <div>
+                            <div class="Contact-right">
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="your Name" required>
+                                    <input type="email" name="Email" placeholder="your email" required>
+                                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                                    <button type="submit" class="btn btn2">submit</button>
+                                </form>
+                               <span id="msg"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        
+                    <p>copyright <i class="fa-regular fa-copyright"></i>
+                        Ranjan Kumar </p>
+                    </div>
+                </div>
+
+
+                <script>
+                    var tablinks = document.getElementsByClassName("tab-links")
+                    var tabcontents = document.getElementsByClassName("tab-contents")
+
+                    function opentab(tabname) {
+                        for (tablink of tablinks) {
+                            tablink.classList.remove("active-link");
+                        }
+                        for (tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                </script>
+                <script>
+                    var sidemenu = document.getElementById("sidemenu");
+
+                    function openmenu(){
+                        sidemenu.style.right = "0"
+                    }
+                    function closemenu(){
+                        sidemenu.style.right = "-200px";
+                    }
+
+                </script>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyKfdfjK0JaXg63t2HMTu2IHK3RXUfiSdnyz-HYiunEFzHA0QBanouHJtpLy6xYTbOA/exec'
+                const form = document.forms['submit-to-google-sheet']
+               const msg = ducument.getElementById("msg")
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML ="Message sent successfully"
+                        setTimeout(function() {
+                            msg.innerHTML = ""
+                        },5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+              
+</body>
+
+</html> 
